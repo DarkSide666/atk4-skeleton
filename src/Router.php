@@ -36,6 +36,11 @@ class Router
 
     protected function convertPathToClassName(string $path): string
     {
+        // remove extension if any
+        if ( ($pos = strrpos($path, '.')) !== false) {
+            $path = substr($path, 0, $pos);
+        }
+
         // Split the path into segments
         $segments = explode('/', $path);
 
