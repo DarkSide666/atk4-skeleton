@@ -1,0 +1,37 @@
+{
+    "name": "atk4/skeleton",
+    "description": "Agile Toolkit Skeleton App",
+    "license": "MIT",
+    "type": "library",
+    "version": "dev-develop",
+    "authors": [
+        {
+            "name": "Imants Horsts",
+            "homepage": "https://darkside.lv/"
+        }
+    ],
+    "require": {
+        "atk4/ui": "dev-develop"
+    },
+    "require-release": {
+        "atk4/ui": "~5.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Atk4\\Skeleton\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Atk4\\Skeleton\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
